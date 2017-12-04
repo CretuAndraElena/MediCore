@@ -1,0 +1,11 @@
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\bin\Debug\netstandard2.0\DataDomain.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\obj\Debug\netstandard2.0\DataPersistence.csproj.CoreCompileInputs.cache
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\obj\Debug\netstandard2.0\DataPersistence.AssemblyInfoInputs.cache
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\obj\Debug\netstandard2.0\DataPersistence.AssemblyInfo.cs
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\bin\Debug\netstandard2.0\DataPersistence.deps.json
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\bin\Debug\netstandard2.0\DataPersistence.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\bin\Debug\netstandard2.0\DataPersistence.pdb
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\bin\Debug\netstandard2.0\DataDomain.pdb
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\obj\Debug\netstandard2.0\DataPersistence.csprojResolveAssemblyReference.cache
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\obj\Debug\netstandard2.0\DataPersistence.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\DataPersistence\obj\Debug\netstandard2.0\DataPersistence.pdb
