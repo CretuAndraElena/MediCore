@@ -1,0 +1,24 @@
+.container {
+  padding-top: 20%;
+}
+
+#main {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: teal;
+  font-size: 80px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+#sub {
+  font-family: Gill Sans, Verdana, serif;
+  color: teal;
+  padding-top: 1%;
+  font-size: 24px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+}
