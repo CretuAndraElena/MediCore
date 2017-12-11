@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace DataPersistence
 {
@@ -9,7 +8,8 @@ namespace DataPersistence
         {
             Database.EnsureCreated();
         }
-
-        public DbSet<DataDomain.Appointment> Appointments { get ; set; }
+        public DbSet<DataDomain.Medic> Medics { get; set; }
+        public DbSet<DataDomain.Patient> Patients { get; set; }
+        public DbSet<DataDomain.Schedule> Schedules { get; set; }
     }
 }

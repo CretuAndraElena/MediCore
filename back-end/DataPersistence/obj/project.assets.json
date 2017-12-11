@@ -3014,7 +3014,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
+    "C:\\Users\\Andra\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3023,17 +3023,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
+      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj",
       "projectName": "DataPersistence",
-      "projectPath": "C:\\Users\\Alex\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\MediCore\\back-end\\DataPersistence\\obj\\",
+      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj",
+      "packagesPath": "C:\\Users\\Andra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3046,8 +3046,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Alex\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
-              "projectPath": "C:\\Users\\Alex\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\DataDomain.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\DataDomain.csproj"
             }
           }
         }

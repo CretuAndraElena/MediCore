@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppointmentRepository\AppointmentRepositorys.csproj" />
+    <ProjectReference Include="..\AppointmentRepository\Repositorys.csproj" />
     <ProjectReference Include="..\DataPersistence\DataPersistence.csproj" />
   </ItemGroup>
 

@@ -5092,20 +5092,6 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "AppointmentRepositorys/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "DataDomain": "1.0.0",
-          "DataPersistence": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AppointmentRepositorys.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AppointmentRepositorys.dll": {}
-        }
-      },
       "DataDomain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5133,6 +5119,20 @@
         },
         "runtime": {
           "bin/placeholder/DataPersistence.dll": {}
+        }
+      },
+      "Repositorys/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "DataDomain": "1.0.0",
+          "DataPersistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repositorys.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repositorys.dll": {}
         }
       }
     }
@@ -13269,11 +13269,6 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "AppointmentRepositorys/1.0.0": {
-      "type": "project",
-      "path": "../AppointmentRepository/AppointmentRepositorys.csproj",
-      "msbuildProject": "../AppointmentRepository/AppointmentRepositorys.csproj"
-    },
     "DataDomain/1.0.0": {
       "type": "project",
       "path": "../Data.Domain/DataDomain.csproj",
@@ -13283,20 +13278,25 @@
       "type": "project",
       "path": "../DataPersistence/DataPersistence.csproj",
       "msbuildProject": "../DataPersistence/DataPersistence.csproj"
+    },
+    "Repositorys/1.0.0": {
+      "type": "project",
+      "path": "../AppointmentRepository/Repositorys.csproj",
+      "msbuildProject": "../AppointmentRepository/Repositorys.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "AppointmentRepositorys >= 1.0.0",
       "DataPersistence >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
+      "Repositorys >= 1.0.0",
       "Swashbuckle.AspNetCore >= 1.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
+    "C:\\Users\\Andra\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13305,17 +13305,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\MediCore\\back-end\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\Alex\\MediCore\\back-end\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\MediCore\\back-end\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\Andra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13328,11 +13328,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Alex\\MediCore\\back-end\\AppointmentRepository\\AppointmentRepositorys.csproj": {
-              "projectPath": "C:\\Users\\Alex\\MediCore\\back-end\\AppointmentRepository\\AppointmentRepositorys.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\Repositorys.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\Repositorys.csproj"
             },
-            "C:\\Users\\Alex\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\Alex\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj"
             }
           }
         }

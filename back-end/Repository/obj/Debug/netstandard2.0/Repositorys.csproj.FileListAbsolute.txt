@@ -1,0 +1,13 @@
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\Repositorys.deps.json
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\Repositorys.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\Repositorys.pdb
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\DataDomain.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\DataPersistence.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\DataDomain.pdb
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\bin\Debug\netstandard2.0\DataPersistence.pdb
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\obj\Debug\netstandard2.0\Repositorys.csprojResolveAssemblyReference.cache
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\obj\Debug\netstandard2.0\Repositorys.csproj.CoreCompileInputs.cache
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\obj\Debug\netstandard2.0\Repositorys.AssemblyInfoInputs.cache
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\obj\Debug\netstandard2.0\Repositorys.AssemblyInfo.cs
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\obj\Debug\netstandard2.0\Repositorys.dll
+C:\Users\Andra\Desktop\NET\Proiect\MediCore\AppointmentRepository\obj\Debug\netstandard2.0\Repositorys.pdb
