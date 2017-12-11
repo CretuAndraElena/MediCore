@@ -1,12 +1,11 @@
 .container {
-  padding-top: 20%;
+  padding-top: 5%;
 }
 
 #main {
   font-family: times, Times New Roman, times-roman, georgia, serif;
   color: teal;
   font-size: 80px;
-  line-height: 44px;
   letter-spacing: -2px;
   font-weight: bold;
 }

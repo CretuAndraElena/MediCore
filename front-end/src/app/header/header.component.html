@@ -1,23 +1,22 @@
-
-<nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+<nav class="navbar navbar-default navbar-doublerow navbar-trans">
   <!-- top nav -->
   <nav class="navbar navbar-top hidden-xs">
     <div class="container">
-  <!-- left nav top -->
-  <ul class="nav navbar-nav pull-left">
-    <li><a href="#"><span class="glyphicon glyphicon-thumbs-up text-white"></span></a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-globe text-white"></span></a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-pushpin text-white"></span></a></li>
-    <li><a href="#"><span class="text-white"><strong>Early alpha</strong></span></a></li>
-  </ul>
-  <!-- right nav top -->
-  <ul class="nav navbar-nav pull-right">
-    <li><a href="#" class="text-white"><strong>About Us</strong></a></li>
-    <li><a href="#" class="text-white"><strong>Contact Us</strong></a></li>
-  </ul>
-</div>
-  <div class="dividline light-grey"></div>
-</nav>
+      <!-- left nav top -->
+      <ul class="nav navbar-nav pull-left">
+        <li><a href="#"><span class="glyphicon glyphicon-thumbs-up text-white"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-globe text-white"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-pushpin text-white"></span></a></li>
+        <li><a href="#"><span class="text-white"><strong>Early alpha</strong></span></a></li>
+      </ul>
+      <!-- right nav top -->
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#" class="text-white"><strong>About Us</strong></a></li>
+        <li><a href="#" class="text-white"><strong>Contact Us</strong></a></li>
+      </ul>
+    </div>
+    <div class="dividline light-grey"></div>
+  </nav>
   <!-- down nav -->
   <nav class="navbar navbar-down">
     <div class="container">
@@ -31,7 +30,7 @@
           <li><a href="#"><strong>Schedule</strong></a></li>
         </ul>
         <ul class="nav navbar-nav flex-item hidden-xs pull-right">
-          <li><a href="#" class=""><strong>Log In!</strong></a></li>
+          <li><a (click)="toLoginPage()"><strong>Log In!</strong></a></li>
         </ul>
       </div>
     </div>

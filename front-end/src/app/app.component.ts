@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  @Input() loadLoginPage = false;
+  @Input() loadRegisterPage = false;
+
+  public loadLogin(): void {
+    this.loadLoginPage = true;
+    this.loadRegisterPage = false;
+  }
+
+  public loadRegister(): void {
+    this.loadLoginPage = false;
+    this.loadRegisterPage = true;
+  }
 }
