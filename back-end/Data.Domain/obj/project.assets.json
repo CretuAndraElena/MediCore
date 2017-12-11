@@ -2388,11 +2388,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\DataDomain.csproj",
+      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj",
       "projectName": "DataDomain",
-      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\DataDomain.csproj",
+      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj",
       "packagesPath": "C:\\Users\\Andra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
