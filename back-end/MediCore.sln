@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataDomain", "Data.Domain\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPersistence", "DataPersistence\DataPersistence.csproj", "{44C9716A-E102-40B8-9F35-EF4E9BDA63DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentRepositorys", "AppointmentRepository\AppointmentRepositorys.csproj", "{3138707C-E3F3-4588-844A-C9D6E4AB4152}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositorys", "AppointmentRepository\Repositorys.csproj", "{3138707C-E3F3-4588-844A-C9D6E4AB4152}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{7DCBA682-F510-4E6D-8332-F0273CC4ED2C}"
 EndProject

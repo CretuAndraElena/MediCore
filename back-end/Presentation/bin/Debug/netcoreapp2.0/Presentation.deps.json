@@ -23,11 +23,11 @@
     ".NETCoreApp,Version=v2.0": {
       "Presentation/1.0.0": {
         "dependencies": {
-          "AppointmentRepositorys": "1.0.0",
           "DataPersistence": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.3",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
+          "Repositorys": "1.0.0",
           "Swashbuckle.AspNetCore": "1.1.0"
         },
         "runtime": {
@@ -4115,18 +4115,6 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "AppointmentRepositorys/1.0.0": {
-        "dependencies": {
-          "DataDomain": "1.0.0",
-          "DataPersistence": "1.0.0"
-        },
-        "runtime": {
-          "AppointmentRepositorys.dll": {}
-        },
-        "compile": {
-          "AppointmentRepositorys.dll": {}
-        }
-      },
       "DataDomain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.0.1"
@@ -4150,6 +4138,18 @@
         },
         "compile": {
           "DataPersistence.dll": {}
+        }
+      },
+      "Repositorys/1.0.0": {
+        "dependencies": {
+          "DataDomain": "1.0.0",
+          "DataPersistence": "1.0.0"
+        },
+        "runtime": {
+          "Repositorys.dll": {}
+        },
+        "compile": {
+          "Repositorys.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -6492,17 +6492,17 @@
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
-    "AppointmentRepositorys/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "DataDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "DataPersistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Repositorys/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

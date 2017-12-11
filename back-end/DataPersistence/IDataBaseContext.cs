@@ -5,7 +5,9 @@ namespace DataPersistence
 {
     public interface IDataBaseContext
     {
-        DbSet<Appointment> Appointments { get; set; }
+        DbSet<Schedule> Schedules { get; set; }
+        DbSet<Medic> Medics { get; set; }
+        DbSet<Patient> Patients { get; set; }
         int SaveChanges();
 }
 }

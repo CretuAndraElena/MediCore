@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using DataPersistence;
-using AppointmentRepositorys;
+using Repositorys;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Presentation
@@ -22,8 +22,10 @@ namespace Presentation
             public void ConfigureServices(IServiceCollection services)
             {
                 services.AddTransient<IDataBaseContext, DataBaseContext>();
-                services.AddTransient<IAppointmentRepository, AppointmentRepository>();
-                var conection = @"Server = .\SQLEXPRESS; Database = MediCore.Developement; Trusted_Connection = true;";
+                services.AddTransient<IScheduleRepository, ScheduleRepository>();
+                services.AddTransient<IMedicRepository, MedicRepository>();
+                services.AddTransient<IPatientRepository, PatientRepository>();
+            var conection = @"Server = .\SQLEXPRESS; Database = MediCore; Trusted_Connection = true;";
                 services.AddDbContext<DataBaseContext>(opt => opt.UseSqlServer(conection));
                 services.AddMvc();
 
