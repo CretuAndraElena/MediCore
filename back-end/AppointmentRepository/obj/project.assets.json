@@ -3042,11 +3042,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\Repositorys.csproj",
+      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj",
       "projectName": "Repositorys",
-      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\Repositorys.csproj",
+      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj",
       "packagesPath": "C:\\Users\\Andra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\obj\\",
+      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3065,11 +3065,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\DataDomain.csproj": {
-              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Data.Domain\\DataDomain.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
             },
-            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
             }
           }
         }

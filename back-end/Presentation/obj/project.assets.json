@@ -11633,7 +11633,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "EVwjJFJix9b/BxPgnwUrqEF/xRk/OXsSnNg68Lg5BoMxvI7SF4YxpMFnwQ1tfPp0vcInGdqVRNexk5XvHqym2g==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -13305,11 +13305,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Presentation\\Presentation.csproj",
+      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\Andra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13328,11 +13328,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\Repositorys.csproj": {
-              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\AppointmentRepository\\Repositorys.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj"
             },
-            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\DataPersistence\\DataPersistence.csproj"
+            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
             }
           }
         }
