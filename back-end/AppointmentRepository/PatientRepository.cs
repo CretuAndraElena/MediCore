@@ -2,13 +2,11 @@
 using DataPersistence;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Repositorys
 {
-    public class PatientRepository:IPatientRepository
+    public class PatientRepository : IRepository<Patient>
     {
         private readonly IDataBaseContext _databaseService;
 
@@ -24,7 +22,7 @@ namespace Repositorys
 
         public Patient GetById(Guid id)
         {
-            return _databaseService.Patients.FirstOrDefault(Product => Product.Id == id);
+            return _databaseService.Patients.FirstOrDefault(patient => patient.Id == id);
         }
 
         public void Add(Patient patient)

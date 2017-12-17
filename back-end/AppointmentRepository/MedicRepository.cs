@@ -6,8 +6,8 @@ using System.Linq;
 
 namespace Repositorys
 {
-    public class MedicRepository:IMedicRepository
-    {
+    public class MedicRepository : IRepository<Medic>{
+
         private readonly IDataBaseContext _databaseService;
 
         public MedicRepository(IDataBaseContext database)

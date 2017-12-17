@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using DataDomain;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,9 +23,9 @@ namespace Presentation
             public void ConfigureServices(IServiceCollection services)
             {
                 services.AddTransient<IDataBaseContext, DataBaseContext>();
-                services.AddTransient<IScheduleRepository, ScheduleRepository>();
-                services.AddTransient<IMedicRepository, MedicRepository>();
-                services.AddTransient<IPatientRepository, PatientRepository>();
+                services.AddTransient<IRepository<Schedule>, ScheduleRepository>();
+                services.AddTransient<IRepository<Medic>, MedicRepository>();
+                services.AddTransient<IRepository<Patient>, PatientRepository>();
             var conection = @"Server = .\SQLEXPRESS; Database = MediCore; Trusted_Connection = true;";
                 services.AddDbContext<DataBaseContext>(opt => opt.UseSqlServer(conection));
                 services.AddMvc();

@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Repositorys
 {
-    public class ScheduleRepository : IScheduleRepository
+    public class ScheduleRepository : IRepository<Schedule>
     {
         private readonly IDataBaseContext _databaseService;
 

@@ -11633,7 +11633,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "EVwjJFJix9b/BxPgnwUrqEF/xRk/OXsSnNg68Lg5BoMxvI7SF4YxpMFnwQ1tfPp0vcInGdqVRNexk5XvHqym2g==",
+      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -13296,7 +13296,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andra\\.nuget\\packages\\": {},
+    "C:\\Users\\eduard\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13305,17 +13305,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\Andra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\eduard\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Andra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eduard\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13328,11 +13328,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj": {
-              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj"
+            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj": {
+              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj"
             },
-            "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\Andra\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
+            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
             }
           }
         }
