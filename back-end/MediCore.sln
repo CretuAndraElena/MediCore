@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Presentation", "3-Present
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataDomain", "Data.Domain\DataDomain.csproj", "{AA76C718-998D-4D4D-9212-59D2E576C52B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPersistence", "DataPersistence\DataPersistence.csproj", "{44C9716A-E102-40B8-9F35-EF4E9BDA63DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPersistence", "Data.Persistence\DataPersistence.csproj", "{44C9716A-E102-40B8-9F35-EF4E9BDA63DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositorys", "AppointmentRepository\Repositorys.csproj", "{3138707C-E3F3-4588-844A-C9D6E4AB4152}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Business\Repositories.csproj", "{3138707C-E3F3-4588-844A-C9D6E4AB4152}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{7DCBA682-F510-4E6D-8332-F0273CC4ED2C}"
 EndProject

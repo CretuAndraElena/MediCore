@@ -5091,49 +5091,6 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
-      },
-      "DataDomain/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.0.1"
-        },
-        "compile": {
-          "bin/placeholder/DataDomain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataDomain.dll": {}
-        }
-      },
-      "DataPersistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "DataDomain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "2.0.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.1"
-        },
-        "compile": {
-          "bin/placeholder/DataPersistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataPersistence.dll": {}
-        }
-      },
-      "Repositorys/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "DataDomain": "1.0.0",
-          "DataPersistence": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Repositorys.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Repositorys.dll": {}
-        }
       }
     }
   },
@@ -13268,30 +13225,15 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
-    },
-    "DataDomain/1.0.0": {
-      "type": "project",
-      "path": "../Data.Domain/DataDomain.csproj",
-      "msbuildProject": "../Data.Domain/DataDomain.csproj"
-    },
-    "DataPersistence/1.0.0": {
-      "type": "project",
-      "path": "../DataPersistence/DataPersistence.csproj",
-      "msbuildProject": "../DataPersistence/DataPersistence.csproj"
-    },
-    "Repositorys/1.0.0": {
-      "type": "project",
-      "path": "../AppointmentRepository/Repositorys.csproj",
-      "msbuildProject": "../AppointmentRepository/Repositorys.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "DataPersistence >= 1.0.0",
+      "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositories.csproj",
+      "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
-      "Repositorys >= 1.0.0",
       "Swashbuckle.AspNetCore >= 1.1.0"
     ]
   },
@@ -13328,8 +13270,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj"
+            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositories.csproj"
             },
             "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
               "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
@@ -13371,5 +13313,25 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositories.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositories.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

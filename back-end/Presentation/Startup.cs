@@ -23,9 +23,9 @@ namespace Presentation
             public void ConfigureServices(IServiceCollection services)
             {
                 services.AddTransient<IDataBaseContext, DataBaseContext>();
-                services.AddTransient<IRepository<Schedule>, ScheduleRepository>();
-                services.AddTransient<IRepository<Medic>, MedicRepository>();
-                services.AddTransient<IRepository<Patient>, PatientRepository>();
+                services.AddTransient<IRepository<Schedule>, CrudRepository<Schedule>>();
+                services.AddTransient<IRepository<Medic>, CrudRepository<Medic>>();
+                services.AddTransient<IRepository<Patient>, CrudRepository<Patient>>();
             var conection = @"Server = .\SQLEXPRESS; Database = MediCore; Trusted_Connection = true;";
                 services.AddDbContext<DataBaseContext>(opt => opt.UseSqlServer(conection));
                 services.AddMvc();

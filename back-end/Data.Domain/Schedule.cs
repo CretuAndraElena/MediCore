@@ -2,9 +2,8 @@
 
 namespace DataDomain
 {
-    public class Schedule
+    public class Schedule : BaseEntity
     {
-        public Guid Id { get; set; }
         public DateTime Date { get; set; }
         public Medic Medic { get; set; }
         public Patient Patient { get; set; }
