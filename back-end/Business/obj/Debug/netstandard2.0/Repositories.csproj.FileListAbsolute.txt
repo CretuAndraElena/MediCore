@@ -8,3 +8,6 @@ C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repo
 C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.csproj.CoreCompileInputs.cache
 C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.AssemblyInfoInputs.cache
 C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.AssemblyInfo.cs
+C:\Users\eduard\Desktop\MediCore\back-end\Business\bin\Debug\netstandard2.0\Repositories.pdb
+C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.dll
+C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.pdb

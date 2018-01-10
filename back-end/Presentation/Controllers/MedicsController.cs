@@ -54,7 +54,7 @@ namespace Presentation.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Category,Specialization,Rating,Id,FirsName,LastName,Username,Password,Gender,role")] Medic medic)
+        public async Task<IActionResult> Create([Bind("Category,Specialization,Rating,Id,FirsName,LastName,Username,Password,Gender,Role")] Medic medic)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Presentation.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Category,Specialization,Rating,Id,FirsName,LastName,Username,Password,Gender,role")] Medic medic)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Category,Specialization,Rating,Id,FirsName,LastName,Username,Password,Gender,Role")] Medic medic)
         {
             if (id != medic.Id)
             {

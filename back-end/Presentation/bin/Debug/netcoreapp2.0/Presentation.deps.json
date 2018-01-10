@@ -23,11 +23,12 @@
     ".NETCoreApp,Version=v2.0": {
       "Presentation/1.0.0": {
         "dependencies": {
+          "DataDomain": "1.0.0",
           "DataPersistence": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.3",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
-          "Repositorys": "1.0.0",
+          "Repositories": "1.0.0",
           "Swashbuckle.AspNetCore": "1.1.0"
         },
         "runtime": {
@@ -4140,16 +4141,16 @@
           "DataPersistence.dll": {}
         }
       },
-      "Repositorys/1.0.0": {
+      "Repositories/1.0.0": {
         "dependencies": {
           "DataDomain": "1.0.0",
           "DataPersistence": "1.0.0"
         },
         "runtime": {
-          "Repositorys.dll": {}
+          "Repositories.dll": {}
         },
         "compile": {
-          "Repositorys.dll": {}
+          "Repositories.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -6502,7 +6503,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Repositorys/1.0.0": {
+    "Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

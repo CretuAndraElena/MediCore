@@ -56,8 +56,6 @@ C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\P
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Presentation.pdb
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\DataDomain.dll
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\DataPersistence.dll
-C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Repositorys.dll
-C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Repositorys.pdb
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\DataPersistence.pdb
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\DataDomain.pdb
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\Presentation.csprojResolveAssemblyReference.cache
@@ -66,3 +64,5 @@ C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\P
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\Presentation.AssemblyInfo.cs
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\Presentation.dll
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\Presentation.pdb
+C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Repositories.dll
+C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Repositories.pdb

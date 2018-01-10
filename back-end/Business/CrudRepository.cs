@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Repositories
 {
-    public class CrudRepository<T> : IRepository<T> where T : BaseEntity
+    public class CrudCrudRepository<T> : ICrudRepository<T> where T : BaseEntity
     {
         private readonly DataBaseContext _databaseService;
 
-        public CrudRepository(DataBaseContext database)
+        public CrudCrudRepository(DataBaseContext database)
         {
             _databaseService = database;
         }

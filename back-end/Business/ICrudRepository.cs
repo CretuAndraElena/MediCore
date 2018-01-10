@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Repositories
 {
-    public interface IRepository<T> where T : class
+    public interface ICrudRepository<T> where T : class
     {
         DbSet<T> GetAll();
         T GetById(Guid id);
