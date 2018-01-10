@@ -15,8 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppointmentRepository\Repositories.csproj" />
-    <ProjectReference Include="..\DataPersistence\DataPersistence.csproj" />
+    <ProjectReference Include="..\Business\Repositories.csproj" />
+    <ProjectReference Include="..\Data.Domain\DataDomain.csproj" />
+    <ProjectReference Include="..\Data.Persistence\DataPersistence.csproj" />
   </ItemGroup>
 
 </Project>
