@@ -22,7 +22,7 @@ namespace Repositorys
 
         public Medic GetById(Guid id)
         {
-            return _databaseService.Medics.FirstOrDefault(Product => Product.Id == id);
+            return _databaseService.Medics.FirstOrDefault(medic =>medic.Id == id);
         }
 
         public void Add(Medic medic)
@@ -31,16 +31,16 @@ namespace Repositorys
             _databaseService.SaveChanges();
         }
 
-        public void Update(Medic Medic)
+        public void Update(Medic medic)
         {
-            _databaseService.Medics.Update(Medic);
+            _databaseService.Medics.Update(medic);
             _databaseService.SaveChanges();
         }
 
         public void Delete(Guid id)
         {
-            var Medic = GetById(id);
-            _databaseService.Medics.Remove(Medic);
+            var medic = GetById(id);
+            _databaseService.Medics.Remove(medic);
             _databaseService.SaveChanges();
         }
 

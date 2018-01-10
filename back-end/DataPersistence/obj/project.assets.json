@@ -731,6 +731,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Helpers": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1"
         },
         "compile": {
@@ -738,6 +739,15 @@
         },
         "runtime": {
           "bin/placeholder/DataDomain.dll": {}
+        }
+      },
+      "Helpers/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helpers.dll": {}
         }
       }
     }
@@ -3002,6 +3012,11 @@
       "type": "project",
       "path": "../Data.Domain/DataDomain.csproj",
       "msbuildProject": "../Data.Domain/DataDomain.csproj"
+    },
+    "Helpers/1.0.0": {
+      "type": "project",
+      "path": "../Helpers/Helpers.csproj",
+      "msbuildProject": "../Helpers/Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3014,7 +3029,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduard\\.nuget\\packages\\": {},
+    "C:\\Users\\cretu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3023,17 +3038,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
+      "projectUniqueName": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
       "projectName": "DataPersistence",
-      "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
-      "packagesPath": "C:\\Users\\eduard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\obj\\",
+      "projectPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj",
+      "packagesPath": "C:\\Users\\cretu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cretu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3046,8 +3061,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
+            "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
             }
           }
         }
@@ -3063,21 +3078,21 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.1"
           }
         },
         "imports": [

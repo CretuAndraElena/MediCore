@@ -1,4 +1,5 @@
-﻿using DataDomain;
+﻿using System;
+using DataDomain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,8 +30,16 @@ namespace Presentation
             var conection = @"Server = .\SQLEXPRESS; Database = MediCore; Trusted_Connection = true;";
                 services.AddDbContext<DataBaseContext>(opt => opt.UseSqlServer(conection));
                 services.AddMvc();
+            // Adds a default in-memory implementation of IDistributedCache.
+                services.AddDistributedMemoryCache();
 
-                services.AddSwaggerGen(c =>
+                services.AddSession(options =>
+                {
+                    // Set a short timeout for easy testing.
+                    options.IdleTimeout = TimeSpan.FromSeconds(10);
+                    options.Cookie.HttpOnly = true;
+                });
+            services.AddSwaggerGen(c =>
                 {
                     c.SwaggerDoc("v1", new Info { Title = "My Category API", Version = "v1" });
                 });
@@ -46,25 +55,18 @@ namespace Presentation
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Category V1");
                 });
-                // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
-                if (env.IsDevelopment())
-                {
-                    app.UseDeveloperExceptionPage();
-                    app.UseBrowserLink();
-                }
-                else
-                {
-                    app.UseExceptionHandler("/Home/Error");
-                }
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+                app.UseSession();
 
+                app.UseDefaultFiles();
                 app.UseStaticFiles();
 
                 app.UseMvc(routes =>
                 {
                     routes.MapRoute(
                         name: "default",
-                        template: "{controller=Home}/{action=Index}/{id?}");
+                        template: "{controller=People}/{action=Login}");
                 });
-            }
+        }
     }
 }

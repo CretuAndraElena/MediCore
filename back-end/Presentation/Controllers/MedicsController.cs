@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DataDomain;
 using DataPersistence;
+using Helpers;
+using Microsoft.AspNetCore.Http;
+using Presentation.Models;
 
 namespace Presentation.Controllers
 {
@@ -22,7 +25,14 @@ namespace Presentation.Controllers
         // GET: Medics
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Medics.ToListAsync());
+            if (HttpContext.Session.GetString("user_name") != null && HttpContext.Session.GetString("user_name") !="")
+            {
+                return View(await _context.Medics.ToListAsync());
+            }
+            else
+            {
+                return RedirectToAction("Login", "People");
+            }
         }
 
         // GET: Medics/Details/5
@@ -50,11 +60,9 @@ namespace Presentation.Controllers
         }
 
         // POST: Medics/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Category,Specialization,Rating,Id,FirsName,LastName,Username,Password,Gender,role")] Medic medic)
+        public async Task<IActionResult> Create([Bind("Specialization,Rating,Id,Cnp,FirstName,LastName,EmailAddres,Username,Password,Gender,Birthday,Role")] Medic medic)
         {
             if (ModelState.IsValid)
             {
@@ -83,11 +91,9 @@ namespace Presentation.Controllers
         }
 
         // POST: Medics/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Category,Specialization,Rating,Id,FirsName,LastName,Username,Password,Gender,role")] Medic medic)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Specialization,Rating,Id,Cnp,FirstName,LastName,EmailAddres,Username,Password,Gender,Birthday,Role")] Medic medic)
         {
             if (id != medic.Id)
             {
@@ -149,6 +155,27 @@ namespace Presentation.Controllers
         private bool MedicExists(Guid id)
         {
             return _context.Medics.Any(e => e.Id == id);
+        }
+        public IActionResult SendEmail()
+        {
+            return View();
+        }
+
+        // POST: People/SendEmail
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SendEmail(EmailSenderViewModel emailSenderVm)
+        {
+            if (!ModelState.IsValid) return View(emailSenderVm);
+            var isOk = await _context.Persons
+                .SingleOrDefaultAsync(m => m.Username == emailSenderVm.ToUsername);
+            if (isOk == null) return View(emailSenderVm);
+            MailHelper email;
+                email = new MailHelper(isOk.EmailAddres, emailSenderVm.Subject,
+                    emailSenderVm.Body);
+
+                email.Send();
+            return RedirectToAction("Index", "People");
         }
     }
 }

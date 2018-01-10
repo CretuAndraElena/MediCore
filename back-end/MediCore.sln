@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositorys", "AppointmentR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{7DCBA682-F510-4E6D-8332-F0273CC4ED2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{8FC3F719-965F-44B0-8F49-012181B2B17B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelpersProject", "HelpersProject", "{A39FE471-EA0F-4F13-8388-03A608487DFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{7DCBA682-F510-4E6D-8332-F0273CC4ED2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DCBA682-F510-4E6D-8332-F0273CC4ED2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DCBA682-F510-4E6D-8332-F0273CC4ED2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC3F719-965F-44B0-8F49-012181B2B17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC3F719-965F-44B0-8F49-012181B2B17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC3F719-965F-44B0-8F49-012181B2B17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC3F719-965F-44B0-8F49-012181B2B17B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{44C9716A-E102-40B8-9F35-EF4E9BDA63DC} = {E878C0B4-7B04-4BD0-950F-5525468B1A52}
 		{3138707C-E3F3-4588-844A-C9D6E4AB4152} = {60C34B06-7C4B-40A4-97A2-5BB27B5F6265}
 		{7DCBA682-F510-4E6D-8332-F0273CC4ED2C} = {5C368E23-3D59-470C-9EA7-8FD01DEFF81E}
+		{8FC3F719-965F-44B0-8F49-012181B2B17B} = {A39FE471-EA0F-4F13-8388-03A608487DFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EA206C10-2DB4-47F2-9ED6-4FAE42310C4B}

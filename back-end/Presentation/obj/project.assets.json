@@ -3123,6 +3123,63 @@
           }
         }
       },
+      "ServiceStack/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Client": "4.5.4",
+          "ServiceStack.Common": "4.5.4"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.dll": {}
+        }
+      },
+      "ServiceStack.Client/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "4.5.4",
+          "ServiceStack.Text": "4.5.4"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        }
+      },
+      "ServiceStack.Common/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "4.5.4",
+          "ServiceStack.Text": "4.5.4"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        }
+      },
+      "ServiceStack.Interfaces/4.5.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10/ServiceStack.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10/ServiceStack.Interfaces.dll": {}
+        }
+      },
+      "ServiceStack.Text/4.5.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.7": {
         "type": "package",
         "dependencies": {
@@ -5096,6 +5153,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Helpers": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1"
         },
         "compile": {
@@ -5119,6 +5177,15 @@
         },
         "runtime": {
           "bin/placeholder/DataPersistence.dll": {}
+        }
+      },
+      "Helpers/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Helpers.dll": {}
         }
       },
       "Repositorys/1.0.0": {
@@ -8396,6 +8463,76 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "ServiceStack/4.5.4": {
+      "sha512": "TpRMnQaGnqP+G5up3D4KE3teMjs+0edXWvn8Dm/FKwZfE5dLEMGOUw+KQnNJdLDei4e4QWlqFNuGrdraFlP3tw==",
+      "type": "package",
+      "path": "servicestack/4.5.4",
+      "files": [
+        "lib/net45/ServiceStack.dll",
+        "lib/net45/ServiceStack.xml",
+        "servicestack.4.5.4.nupkg.sha512",
+        "servicestack.nuspec"
+      ]
+    },
+    "ServiceStack.Client/4.5.4": {
+      "sha512": "rXhs/IVC4aaOSX4f7PFNS9xinl86P5H8uh2SHAp/ypynBnzhsCkPU6y4LTn3XDThxZQmei4QTYSM9x3Jd6Iu0Q==",
+      "type": "package",
+      "path": "servicestack.client/4.5.4",
+      "files": [
+        "lib/MonoAndroid/ServiceStack.Client.dll",
+        "lib/MonoAndroid/ServiceStack.Pcl.Android.dll",
+        "lib/MonoTouch/ServiceStack.Client.dll",
+        "lib/MonoTouch/ServiceStack.Pcl.iOS.dll",
+        "lib/Xamarin.Mac20/ServiceStack.Client.dll",
+        "lib/Xamarin.Mac20/ServiceStack.Pcl.Mac20.dll",
+        "lib/Xamarin.iOS10/ServiceStack.Client.dll",
+        "lib/Xamarin.iOS10/ServiceStack.Pcl.iOS.dll",
+        "lib/net45/ServiceStack.Client.dll",
+        "lib/net45/ServiceStack.Client.xml",
+        "lib/portable-net45+win8+monotouch+monoandroid+xamarin.ios10/ServiceStack.Client.dll",
+        "lib/sl5/ServiceStack.Client.dll",
+        "lib/win/ServiceStack.Client.dll",
+        "lib/win/ServiceStack.Pcl.WinStore.dll",
+        "lib/win/ServiceStack.Pcl.WinStore.pri",
+        "servicestack.client.4.5.4.nupkg.sha512",
+        "servicestack.client.nuspec"
+      ]
+    },
+    "ServiceStack.Common/4.5.4": {
+      "sha512": "u6eJjcygf4cOCbzFWXYS4m4rCbGaUKEm6xH4aNhRff2Ltitgak1t/rSZ/y0TijQC/awkXKK3R+YlhQ5mfiUZMg==",
+      "type": "package",
+      "path": "servicestack.common/4.5.4",
+      "files": [
+        "lib/net45/ServiceStack.Common.dll",
+        "lib/net45/ServiceStack.Common.xml",
+        "servicestack.common.4.5.4.nupkg.sha512",
+        "servicestack.common.nuspec"
+      ]
+    },
+    "ServiceStack.Interfaces/4.5.4": {
+      "sha512": "BKHm+PauCN9632087kJHDH8my1YzLFlNdAAcM4DR1ZOGw/oTO0H6rbd7TZCEAPhMK0Qzday5fDDPQ0mbH/YGwA==",
+      "type": "package",
+      "path": "servicestack.interfaces/4.5.4",
+      "files": [
+        "lib/portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10/ServiceStack.Interfaces.dll",
+        "servicestack.interfaces.4.5.4.nupkg.sha512",
+        "servicestack.interfaces.nuspec"
+      ]
+    },
+    "ServiceStack.Text/4.5.4": {
+      "sha512": "627l5UwpSsK4tLinl7ufpCrYGxpUGc9dEC3UcB3QBgF+Sd0egh2hZHO9wD928obi8jI0Pw/wdUrJQ63RVnEYDA==",
+      "type": "package",
+      "path": "servicestack.text/4.5.4",
+      "files": [
+        "lib/net45/ServiceStack.Text.dll",
+        "lib/net45/ServiceStack.Text.xml",
+        "lib/portable-net45+win8+monotouch+monoandroid+xamarin.ios10/ServiceStack.Text.dll",
+        "lib/sl5/ServiceStack.Text.dll",
+        "lib/sl5/ServiceStack.Text.xml",
+        "servicestack.text.4.5.4.nupkg.sha512",
+        "servicestack.text.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
@@ -13279,6 +13416,11 @@
       "path": "../DataPersistence/DataPersistence.csproj",
       "msbuildProject": "../DataPersistence/DataPersistence.csproj"
     },
+    "Helpers/1.0.0": {
+      "type": "project",
+      "path": "../Helpers/Helpers.csproj",
+      "msbuildProject": "../Helpers/Helpers.csproj"
+    },
     "Repositorys/1.0.0": {
       "type": "project",
       "path": "../AppointmentRepository/Repositorys.csproj",
@@ -13288,15 +13430,18 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "DataPersistence >= 1.0.0",
+      "Helpers >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
+      "Microsoft.AspNetCore.Session >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
       "Repositorys >= 1.0.0",
+      "ServiceStack >= 4.5.4",
       "Swashbuckle.AspNetCore >= 1.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduard\\.nuget\\packages\\": {},
+    "C:\\Users\\cretu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13305,17 +13450,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\eduard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\cretu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cretu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13328,11 +13473,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj"
+            "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
             },
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\DataPersistence\\DataPersistence.csproj"
+            "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\AppointmentRepository\\Repositorys.csproj"
+            },
+            "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Helpers\\Helpers.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\NET\\Proiect\\MediCore\\back-end\\Helpers\\Helpers.csproj"
             }
           }
         }
@@ -13346,22 +13494,30 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.3, )"
+          },
+          "Microsoft.AspNetCore.Session": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
+          "ServiceStack": {
+            "target": "Package",
+            "version": "[4.5.4, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.3"
+            "version": "[1.1.0, )"
           }
         },
         "imports": [
@@ -13371,5 +13527,57 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ServiceStack 4.5.4' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ServiceStack",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ServiceStack.Client 4.5.4' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ServiceStack.Client",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ServiceStack.Common 4.5.4' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ServiceStack.Common",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ServiceStack.Interfaces 4.5.4' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ServiceStack.Interfaces",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ServiceStack.Text 4.5.4' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ServiceStack.Text",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

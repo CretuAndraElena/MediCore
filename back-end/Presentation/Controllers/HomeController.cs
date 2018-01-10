@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Models;
+using DataPersistence;
+
 
 namespace Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly DataBaseContext _context;
+
+        public HomeController(DataBaseContext context)
         {
-            return View();
+            _context = context;
         }
 
         public IActionResult About()
@@ -28,7 +28,7 @@ namespace Presentation.Controllers
 
             return View();
         }
-
+        
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

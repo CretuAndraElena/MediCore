@@ -10,14 +10,7 @@
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
-    <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Date)
-                </th>
-            <th></th>
-        </tr>
-    </thead>
+            <th> <label>Medics:</label>  @ViewBag.MedicsList
     <tbody>
 @foreach (var item in Model) {
         <tr>

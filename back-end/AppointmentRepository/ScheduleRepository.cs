@@ -22,12 +22,12 @@ namespace Repositorys
 
         public Schedule GetById(Guid id)
         {
-            return _databaseService.Schedules.FirstOrDefault(Product => Product.Id == id);
+            return _databaseService.Schedules.FirstOrDefault(shedule => shedule.Id == id);
         }
 
-        public void Add(Schedule Schedule)
+        public void Add(Schedule schedule)
         {
-            _databaseService.Schedules.Add(Schedule);
+            _databaseService.Schedules.Add(schedule);
             _databaseService.SaveChanges();
         }
 
@@ -39,8 +39,8 @@ namespace Repositorys
 
         public void Delete(Guid id)
         {
-            var Schedule = GetById(id);
-            _databaseService.Schedules.Remove(Schedule);
+            var schedule = GetById(id);
+            _databaseService.Schedules.Remove(schedule);
             _databaseService.SaveChanges();
         }
 

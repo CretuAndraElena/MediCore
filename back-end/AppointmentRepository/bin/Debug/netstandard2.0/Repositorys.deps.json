@@ -464,6 +464,7 @@
       },
       "DataDomain/1.0.0": {
         "dependencies": {
+          "Helpers": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1"
         },
         "runtime": {
@@ -479,6 +480,11 @@
         },
         "runtime": {
           "DataPersistence.dll": {}
+        }
+      },
+      "Helpers/1.0.0": {
+        "runtime": {
+          "Helpers.dll": {}
         }
       }
     }
@@ -880,6 +886,11 @@
       "sha512": ""
     },
     "DataPersistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Helpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

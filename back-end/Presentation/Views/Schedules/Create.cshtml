@@ -1,6 +1,8 @@
-﻿@model DataDomain.Schedule
+﻿@using DataDomain
+@model Presentation.Models.SchedulesViewModel
 
 @{
+
     ViewData["Title"] = "Create";
 }
 
@@ -8,6 +10,11 @@
 
 <h4>Schedule</h4>
 <hr />
+@foreach (var item in (List<Medic>)ViewBag.Medics)
+{
+    <p>@item.FirstName</p>
+}
+<p>Nu merge</p>
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
@@ -28,6 +35,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

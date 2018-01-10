@@ -1,31 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DataDomain
 {
     public class Medic : Person
     {
-        public string Category { get; set; }
         public string Specialization { get; set; }
         public double Rating { get; set; }
-        public List<Schedule> Schedules { get; set; }
         public List<Patient> Patients { get; set; }
+        public List<Schedule> Schedules { get; set; }
 
-        public static Medic Create( string category,string specialization,double rating ,List<Schedule> schedules,List<Patient> patients)
+        public Medic(string cnp, string firstName, string lastName, string userName, string password, string gender,
+            DateTime birthday,string specialization, string emailAddres) : base(cnp, lastName, firstName, userName, password, gender, birthday,"medic",emailAddres)
         {
-            var medic = new Medic { Id = Guid.NewGuid() };
-            medic.Update(category,specialization,rating,schedules,patients);
-            return medic;
+            Specialization = specialization;
+            Rating = 0.0;
         }
 
-        public void Update(string category, string specialization, double rating, List<Schedule> schedules, List<Patient> patients)
+        public Medic() : base()
         {
-            this.Category = category;
-            this.Rating = rating;
-            this.Schedules = new List<Schedule>(schedules);
-            this.Patients = new List<Patient>(patients);
-            this.Specialization =specialization;
+        }
+
+        public static Patient Create(List<Diagnosis> diagnosis, List<Schedule> schedules)
+        {
+            var patient = new Patient();
+            patient.Update(diagnosis, schedules);
+            return patient;
+        }
+
+        public void Update(List<Patient> patients, List<Schedule> schedules)
+        {
+            this.Schedules = schedules;
+            this.Patients = patients;
         }
     }
 }

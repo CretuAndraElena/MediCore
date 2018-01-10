@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DataDomain;
 using DataPersistence;
+using Presentation.Models;
 
 namespace Presentation.Controllers
 {
     public class SchedulesController : Controller
     {
         private readonly DataBaseContext _context;
-
         public SchedulesController(DataBaseContext context)
         {
             _context = context;
@@ -22,6 +21,8 @@ namespace Presentation.Controllers
         // GET: Schedules
         public async Task<IActionResult> Index()
         {
+            ViewBag.MedicsList = _context.Medics
+                .SingleOrDefaultAsync();
             return View(await _context.Schedules.ToListAsync());
         }
 
@@ -46,24 +47,21 @@ namespace Presentation.Controllers
         // GET: Schedules/Create
         public IActionResult Create()
         {
+            var medicList = _context.Medics.ToList();
+            ViewBag.Medics = medicList;
             return View();
         }
 
         // POST: Schedules/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date")] Schedule schedule)
+        public async Task<IActionResult> Create(SchedulesViewModel scheduleVm)
         {
-            if (ModelState.IsValid)
-            {
-                schedule.Id = Guid.NewGuid();
-                _context.Add(schedule);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(schedule);
+            if (!ModelState.IsValid) return View(scheduleVm);
+            return View();
+            /*_context.Add(scheduleVm);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));*/
         }
 
         // GET: Schedules/Edit/5
@@ -83,8 +81,6 @@ namespace Presentation.Controllers
         }
 
         // POST: Schedules/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Date")] Schedule schedule)

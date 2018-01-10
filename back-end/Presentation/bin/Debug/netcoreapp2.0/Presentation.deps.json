@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "dcbf53f0071ffa7dd4857f7d63356f2138b81b95"
+    "signature": "01d7206375a13a33734f6cb91747b2c0e4b16660"
   },
   "compilationOptions": {
     "defines": [
@@ -24,10 +24,13 @@
       "Presentation/1.0.0": {
         "dependencies": {
           "DataPersistence": "1.0.0",
+          "Helpers": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.3",
+          "Microsoft.AspNetCore.Session": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
           "Repositorys": "1.0.0",
+          "ServiceStack": "4.5.4",
           "Swashbuckle.AspNetCore": "1.1.0"
         },
         "runtime": {
@@ -2688,6 +2691,58 @@
           }
         }
       },
+      "ServiceStack/4.5.4": {
+        "dependencies": {
+          "ServiceStack.Client": "4.5.4",
+          "ServiceStack.Common": "4.5.4"
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.dll": {}
+        },
+        "compile": {
+          "lib/net45/ServiceStack.dll": {}
+        }
+      },
+      "ServiceStack.Client/4.5.4": {
+        "dependencies": {
+          "ServiceStack.Interfaces": "4.5.4",
+          "ServiceStack.Text": "4.5.4"
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        }
+      },
+      "ServiceStack.Common/4.5.4": {
+        "dependencies": {
+          "ServiceStack.Interfaces": "4.5.4",
+          "ServiceStack.Text": "4.5.4"
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        }
+      },
+      "ServiceStack.Interfaces/4.5.4": {
+        "runtime": {
+          "lib/portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10/ServiceStack.Interfaces.dll": {}
+        },
+        "compile": {
+          "lib/portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10/ServiceStack.Interfaces.dll": {}
+        }
+      },
+      "ServiceStack.Text/4.5.4": {
+        "runtime": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.7": {
         "dependencies": {
           "SQLitePCLRaw.core": "1.1.7",
@@ -4117,6 +4172,7 @@
       },
       "DataDomain/1.0.0": {
         "dependencies": {
+          "Helpers": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1"
         },
         "runtime": {
@@ -4138,6 +4194,14 @@
         },
         "compile": {
           "DataPersistence.dll": {}
+        }
+      },
+      "Helpers/1.0.0": {
+        "runtime": {
+          "Helpers.dll": {}
+        },
+        "compile": {
+          "Helpers.dll": {}
         }
       },
       "Repositorys/1.0.0": {
@@ -5715,6 +5779,41 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "ServiceStack/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TpRMnQaGnqP+G5up3D4KE3teMjs+0edXWvn8Dm/FKwZfE5dLEMGOUw+KQnNJdLDei4e4QWlqFNuGrdraFlP3tw==",
+      "path": "servicestack/4.5.4",
+      "hashPath": "servicestack.4.5.4.nupkg.sha512"
+    },
+    "ServiceStack.Client/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rXhs/IVC4aaOSX4f7PFNS9xinl86P5H8uh2SHAp/ypynBnzhsCkPU6y4LTn3XDThxZQmei4QTYSM9x3Jd6Iu0Q==",
+      "path": "servicestack.client/4.5.4",
+      "hashPath": "servicestack.client.4.5.4.nupkg.sha512"
+    },
+    "ServiceStack.Common/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u6eJjcygf4cOCbzFWXYS4m4rCbGaUKEm6xH4aNhRff2Ltitgak1t/rSZ/y0TijQC/awkXKK3R+YlhQ5mfiUZMg==",
+      "path": "servicestack.common/4.5.4",
+      "hashPath": "servicestack.common.4.5.4.nupkg.sha512"
+    },
+    "ServiceStack.Interfaces/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BKHm+PauCN9632087kJHDH8my1YzLFlNdAAcM4DR1ZOGw/oTO0H6rbd7TZCEAPhMK0Qzday5fDDPQ0mbH/YGwA==",
+      "path": "servicestack.interfaces/4.5.4",
+      "hashPath": "servicestack.interfaces.4.5.4.nupkg.sha512"
+    },
+    "ServiceStack.Text/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-627l5UwpSsK4tLinl7ufpCrYGxpUGc9dEC3UcB3QBgF+Sd0egh2hZHO9wD928obi8jI0Pw/wdUrJQ63RVnEYDA==",
+      "path": "servicestack.text/4.5.4",
+      "hashPath": "servicestack.text.4.5.4.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_green/1.1.7": {
       "type": "package",
       "serviceable": true,
@@ -6498,6 +6597,11 @@
       "sha512": ""
     },
     "DataPersistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Helpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DataDomain;
 using DataPersistence;
+using Microsoft.AspNetCore.Http;
 
 namespace Presentation.Controllers
 {
     public class PatientsController : Controller
     {
         private readonly DataBaseContext _context;
-
         public PatientsController(DataBaseContext context)
         {
             _context = context;
@@ -22,6 +22,9 @@ namespace Presentation.Controllers
         // GET: Patients
         public async Task<IActionResult> Index()
         {
+            ViewData["UserName"] = HttpContext.Session.GetString("user_name");
+            ViewData["Role"] = HttpContext.Session.GetString("role");
+            ViewData["Email"] = HttpContext.Session.GetString("email");
             return View(await _context.Patients.ToListAsync());
         }
 
@@ -50,11 +53,9 @@ namespace Presentation.Controllers
         }
 
         // POST: Patients/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirsName,LastName,Username,Password,Gender,role")] Patient patient)
+        public async Task<IActionResult> Create([Bind("Id,Cnp,FirstName,LastName,EmailAddres,Username,Password,Gender,Birthday,Role")] Patient patient)
         {
             if (ModelState.IsValid)
             {
@@ -83,11 +84,9 @@ namespace Presentation.Controllers
         }
 
         // POST: Patients/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,FirsName,LastName,Username,Password,Gender,role")] Patient patient)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Cnp,FirstName,LastName,EmailAddres,Username,Password,Gender,Birthday,Role")] Patient patient)
         {
             if (id != patient.Id)
             {

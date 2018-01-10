@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 
 namespace DataDomain
 {
@@ -8,9 +7,17 @@ namespace DataDomain
     {
         public List<Diagnosis> Diagnosis { get; set; }
         public List<Schedule> Schedules { get; set; }
+
+        public Patient(string cnp,string firstName, string lastName, string userName, string password, string gender,
+            DateTime birthday, string emailAddres) : base(cnp,lastName, firstName, userName, password, gender, birthday,"patient",emailAddres) => throw new NotImplementedException();
+
+        public Patient() : base()
+        {
+        }
+
         public static Patient Create(List<Diagnosis> diagnosis,List<Schedule> schedules)
         {
-            var patient = new Patient { Id = Guid.NewGuid() };
+            var patient = new Patient();
             patient.Update(diagnosis,schedules);
             return patient;
         }
