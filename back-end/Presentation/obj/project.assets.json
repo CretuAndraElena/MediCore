@@ -5134,6 +5134,16 @@
         "runtime": {
           "bin/placeholder/Repositories.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -13283,6 +13293,11 @@
       "type": "project",
       "path": "../Business/Repositories.csproj",
       "msbuildProject": "../Business/Repositories.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13293,7 +13308,8 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
       "Repositories >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 1.1.0"
+      "Swashbuckle.AspNetCore >= 1.1.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13329,6 +13345,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\Utils.csproj"
+            },
             "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
               "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
             },

@@ -18,6 +18,7 @@
     <ProjectReference Include="..\Business\Repositories.csproj" />
     <ProjectReference Include="..\Data.Domain\DataDomain.csproj" />
     <ProjectReference Include="..\Data.Persistence\DataPersistence.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
   </ItemGroup>
 
 </Project>

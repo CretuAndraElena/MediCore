@@ -66,3 +66,5 @@ C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\P
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\obj\Debug\netcoreapp2.0\Presentation.pdb
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Repositories.dll
 C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Repositories.pdb
+C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Utils.dll
+C:\Users\eduard\Desktop\MediCore\back-end\Presentation\bin\Debug\netcoreapp2.0\Utils.pdb

@@ -29,7 +29,8 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
           "Repositories": "1.0.0",
-          "Swashbuckle.AspNetCore": "1.1.0"
+          "Swashbuckle.AspNetCore": "1.1.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Presentation.dll": {}
@@ -4153,6 +4154,14 @@
           "Repositories.dll": {}
         }
       },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        },
+        "compile": {
+          "Utils.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -6504,6 +6513,11 @@
       "sha512": ""
     },
     "Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

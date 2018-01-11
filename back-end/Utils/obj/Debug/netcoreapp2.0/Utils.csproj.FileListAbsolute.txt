@@ -1,0 +1,9 @@
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\bin\Debug\netcoreapp2.0\Utils.deps.json
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\bin\Debug\netcoreapp2.0\Utils.dll
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\bin\Debug\netcoreapp2.0\Utils.pdb
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\obj\Debug\netcoreapp2.0\Utils.csprojResolveAssemblyReference.cache
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\obj\Debug\netcoreapp2.0\Utils.csproj.CoreCompileInputs.cache
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\obj\Debug\netcoreapp2.0\Utils.AssemblyInfoInputs.cache
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\obj\Debug\netcoreapp2.0\Utils.AssemblyInfo.cs
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\obj\Debug\netcoreapp2.0\Utils.dll
+C:\Users\eduard\Desktop\MediCore\back-end\Utils\obj\Debug\netcoreapp2.0\Utils.pdb
