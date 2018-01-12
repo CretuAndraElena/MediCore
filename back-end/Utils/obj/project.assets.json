@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduard\\.nuget\\packages\\": {},
+    "C:\\Users\\cretu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,17 +673,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\Utils.csproj",
+      "projectUniqueName": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Utils\\Utils.csproj",
       "projectName": "Utils",
-      "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\Utils.csproj",
-      "packagesPath": "C:\\Users\\eduard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\obj\\",
+      "projectPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Utils\\Utils.csproj",
+      "packagesPath": "C:\\Users\\cretu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Utils\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cretu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,7 +710,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
