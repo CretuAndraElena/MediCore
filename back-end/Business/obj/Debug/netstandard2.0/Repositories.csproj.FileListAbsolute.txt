@@ -11,16 +11,3 @@ C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repo
 C:\Users\eduard\Desktop\MediCore\back-end\Business\bin\Debug\netstandard2.0\Repositories.pdb
 C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.dll
 C:\Users\eduard\Desktop\MediCore\back-end\Business\obj\Debug\netstandard2.0\Repositories.pdb
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\Repositories.deps.json
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\Repositories.dll
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\Repositories.pdb
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\DataDomain.dll
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\DataPersistence.dll
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\DataDomain.pdb
-C:\Users\cretu\Desktop\medicore\back-end\Business\bin\Debug\netstandard2.0\DataPersistence.pdb
-C:\Users\cretu\Desktop\medicore\back-end\Business\obj\Debug\netstandard2.0\Repositories.csprojResolveAssemblyReference.cache
-C:\Users\cretu\Desktop\medicore\back-end\Business\obj\Debug\netstandard2.0\Repositories.csproj.CoreCompileInputs.cache
-C:\Users\cretu\Desktop\medicore\back-end\Business\obj\Debug\netstandard2.0\Repositories.AssemblyInfoInputs.cache
-C:\Users\cretu\Desktop\medicore\back-end\Business\obj\Debug\netstandard2.0\Repositories.AssemblyInfo.cs
-C:\Users\cretu\Desktop\medicore\back-end\Business\obj\Debug\netstandard2.0\Repositories.dll
-C:\Users\cretu\Desktop\medicore\back-end\Business\obj\Debug\netstandard2.0\Repositories.pdb

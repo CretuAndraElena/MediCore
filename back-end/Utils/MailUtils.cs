@@ -10,7 +10,7 @@ namespace Utils
         public string Subject { get; set; }
         public string Body { get; set; }
         public string ToEmail { get; set; }
-        private readonly SmtpClient _smtpClient;
+        private readonly SmtpClient SmtpClient;
         private readonly string _password = "medicore123";
 
         public MailUtils(string toEmail, string subject, string body)
@@ -19,16 +19,16 @@ namespace Utils
             Body = body;
             ToEmail = toEmail;
             _fromEmail = "wesaveyou.medicore@gmail.com";
-            _smtpClient = new SmtpClient("smtp.gmail.com", 587);
+            SmtpClient = new SmtpClient("smtp.gmail.com", 587);
         }
 
         public void Send()
         {
             var mailMessage = new MailMessage(_fromEmail, ToEmail, Subject, Body);
-            _smtpClient.EnableSsl = true;
-            _smtpClient.UseDefaultCredentials = false;
-            _smtpClient.Credentials = new NetworkCredential(_fromEmail, _password);
-            _smtpClient.Send(mailMessage);
+            SmtpClient.EnableSsl = true;
+            SmtpClient.UseDefaultCredentials = false;
+            SmtpClient.Credentials = new NetworkCredential(_fromEmail, _password);
+            SmtpClient.Send(mailMessage);
         }
     }
 }
