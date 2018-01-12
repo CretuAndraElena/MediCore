@@ -13313,7 +13313,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduard\\.nuget\\packages\\": {},
+    "C:\\Users\\cretu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13322,17 +13322,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\eduard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\cretu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cretu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13345,17 +13345,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Utils\\Utils.csproj"
+            "C:\\Users\\cretu\\Desktop\\git\\back-end\\Data.Persistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Data.Persistence\\DataPersistence.csproj"
             },
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
+            "C:\\Users\\cretu\\Desktop\\git\\back-end\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Utils\\Utils.csproj"
             },
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Persistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Persistence\\DataPersistence.csproj"
+            "C:\\Users\\cretu\\Desktop\\git\\back-end\\Data.Domain\\DataDomain.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Data.Domain\\DataDomain.csproj"
             },
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Business\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Business\\Repositories.csproj"
+            "C:\\Users\\cretu\\Desktop\\git\\back-end\\Business\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\git\\back-end\\Business\\Repositories.csproj"
             }
           }
         }
@@ -13369,22 +13369,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.3, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.3"
+            "version": "[1.1.0, )"
           }
         },
         "imports": [
