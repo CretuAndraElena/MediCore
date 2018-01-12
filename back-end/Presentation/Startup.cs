@@ -1,4 +1,5 @@
-﻿using DataDomain;
+﻿using System;
+using DataDomain;
 using DataPersistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,8 +32,13 @@ namespace Presentation
             var conection = @"Server = .\SQLEXPRESS; Database = MediCore; Trusted_Connection = true;";
                 services.AddDbContext<DataBaseContext>(opt => opt.UseSqlServer(conection));
                 services.AddMvc();
-
-                services.AddSwaggerGen(c =>
+                services.AddSession(options =>
+                {
+                    // Set a short timeout for easy testing.
+                    options.IdleTimeout = TimeSpan.FromSeconds(100);
+                    options.Cookie.HttpOnly = true;
+                });
+            services.AddSwaggerGen(c =>
                 {
                     c.SwaggerDoc("v1", new Info { Title = "My Category API", Version = "v1" });
                 });
@@ -48,8 +54,9 @@ namespace Presentation
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Category V1");
                 });
-                // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
-                if (env.IsDevelopment())
+                app.UseSession();
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            if (env.IsDevelopment())
                 {
                     app.UseDeveloperExceptionPage();
                     app.UseBrowserLink();

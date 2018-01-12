@@ -3033,7 +3033,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduard\\.nuget\\packages\\": {},
+    "C:\\Users\\cretu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3042,17 +3042,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Business\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Business\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Business\\Repositories.csproj",
-      "packagesPath": "C:\\Users\\eduard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Business\\obj\\",
+      "projectPath": "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Business\\Repositories.csproj",
+      "packagesPath": "C:\\Users\\cretu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cretu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3065,11 +3065,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Domain\\DataDomain.csproj"
+            "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Data.Persistence\\DataPersistence.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Data.Persistence\\DataPersistence.csproj"
             },
-            "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Persistence\\DataPersistence.csproj": {
-              "projectPath": "C:\\Users\\eduard\\Desktop\\MediCore\\back-end\\Data.Persistence\\DataPersistence.csproj"
+            "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Data.Domain\\DataDomain.csproj": {
+              "projectPath": "C:\\Users\\cretu\\Desktop\\medicore\\back-end\\Data.Domain\\DataDomain.csproj"
             }
           }
         }
@@ -3086,7 +3086,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
