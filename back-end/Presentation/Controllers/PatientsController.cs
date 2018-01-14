@@ -21,7 +21,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> Index()
         {
             ViewData["UserName"] = HttpContext.Session.GetString("user_name");
-            ViewData["Role"] = HttpContext.Session.GetString("role");
+            ViewData["Id"] = HttpContext.Session.GetString("id");
             ViewData["Email"] = HttpContext.Session.GetString("email");
             return View(await _context.Patients.ToListAsync());
         }

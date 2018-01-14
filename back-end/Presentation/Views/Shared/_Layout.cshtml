@@ -16,7 +16,8 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
+<body style="background-image: url(/images/medicina_interna.jpg);background-repeat: no-repeat;
+                                      background-position: right center;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -41,13 +42,6 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - Medicore</p>
-        </footer>
-    </div>
-
+    @RenderBody()
 </body>
 </html>
