@@ -4,82 +4,49 @@
     ViewData["Title"] = "Index";
     Layout = "_LayoutPatients";
 }
+<br/>
+<div class="panel panel-info" style="margin-left: 40px; margin-right: 40px;">
+    <div class="panel-heading"><h3>We care about you and we offer you the following medical services...</h3></div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <p>
+                <strong> General Primary Car</strong><br/>
+                Our primary care services include preventative health care and routine medical care, such as physical exams, treatment of common problems (colds, vomiting, skin problems like acne, infections); accidents, and sports related injuries such as sprains and fractures and lacerations, as well as chronic illnesses such as asthma or diabetes. Referrals for specialty consultations and care can be made when necessary.
+                <br/>
+                <strong>Women's Health Care</strong><br/>
+                For females, routine pelvic and breast examinations, Pap tests, contraceptive services, sexually transmitted infection testing and treatment are available. Counseling regarding pregnancy options, and referrals for prenatal care or pregnancy terminations are made. Information about the GYN Examination, Evaluation of Sexually Transmitted Infections, and gynecological appointment .
+                <br/>
+                <strong>Men's Health Care</strong><br/>
 
-<h2>Index</h2>
+                For males, preventive health services and screening for sexually transmitted infections and other health concerns unique to men are available.
+                <br/>
+            </div>
+            <div class="col-lg-6">
+                <strong>Immunizations, TB testing, flu vaccines</strong><br/>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+                Reviewing, screening, and updating immunizations is provided. Students will need to pay for vaccines before receiving them from the provider. Some vaccines are eligible for reimbursement from their health insurance. For information on Rutgers University immunization requirements and other vaccines, visit here.
+                <br/>
+                <strong>Laboratory Tests</strong><br/>
 
-<table class="table">
-    <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Cnp)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FirstName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.LastName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.EmailAddress)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Username)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Password)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Gender)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Birthday)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Role)
-                </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cnp)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmailAddress)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gender)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Birthday)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Role)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                Laboratory services are available for students who require laboratory testing. Some tests are sent to an outside laboratory. A selected number of basic tests are included in the Health Fee at no charge to the student.
+                <br/>
+                <strong>Physical Examinations</strong><br/>
+
+                Physical Examinations are provided as recommended.
+                <br/>
+                <strong>Nutrition Counseling</strong><br/>
+
+                Clinical staff can provide nutrition counseling. Just ask your regular health care provider. For additional nutrition information go to http://www.choosemyplate.gov/.
+                <br/>
+                <strong>HIV Testing</strong><br/>
+
+                Confidential HIV testing is available at Student Health Services. The CDC recommends yearly HIV testing for everyone regardless of risk..
+
+                Sexually Transmitted Infection (STI) Testing and Treatment
+
+                Confidential STI testing and treatment is available at Student Health Services.
+            </p>
+        </div>
+    </div>
+        </div>

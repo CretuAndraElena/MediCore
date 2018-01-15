@@ -16,32 +16,14 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger col-md-4 col-md-offset-4" align="center">
+        @Html.ValidationMessage("Error")
+    </div>
+}
 <body style="background-image: url(/images/medicina_interna.jpg);background-repeat: no-repeat;
                                       background-position: right center;">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Medicore</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Persons" asp-action="Register">Register</a></li>
-                    <li><a asp-area="" asp-controller="Persons" asp-action="Login">Login</a></li>
-                    <li><a asp-area="" asp-controller="Persons" asp-action="Logout">Logout</a></li>
-                    <li><a asp-area="" asp-controller="Medics" asp-action="Index">Medics</a></li>
-                    <li><a asp-area="" asp-controller="Schedules" asp-action="Index">Schedules</a></li>
-                    <li><a asp-area="" asp-controller="Patients" asp-action="Index">Patients</a></li>
-                    <li><a asp-area="" asp-controller="Persons" asp-action="Index">Persons</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     @RenderBody()
 </body>
 </html>

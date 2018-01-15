@@ -145,14 +145,15 @@ namespace Presentation.Controllers
             HttpContext.Session.SetString("user_name", loginVm.UserName);
             HttpContext.Session.SetString("id", isOk.Id.ToString());
             HttpContext.Session.SetString("email", isOk.EmailAddress);
+            ViewBag.Username = HttpContext.Session.GetString("user_name");
+            ViewBag.Id = HttpContext.Session.GetString("id");
+            ViewBag.EmailAddress = HttpContext.Session.GetString("email");
             return RedirectToAction("Index", isOk.Role == "Patient" ? "Patients" : "Medics");
         }
 
         public IActionResult Logout()
         {
-            HttpContext.Session.SetString("user_name", "");
-            HttpContext.Session.SetString("rol", "");
-            HttpContext.Session.SetString("email", "");
+            HttpContext.Session.Clear();
             return RedirectToAction("Login", "Persons");
         }
 
