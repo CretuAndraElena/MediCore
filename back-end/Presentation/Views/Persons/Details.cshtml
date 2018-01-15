@@ -2,12 +2,15 @@
 
 @{
     ViewData["Title"] = "Details";
+    Layout = "_LayoutPatients";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Person</h4>
+<div class="container col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+    <h1>Details</h1>
+</div>
+<div class="panel-body">
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -65,8 +68,11 @@
             @Html.DisplayFor(model => model.Role)
         </dd>
     </dl>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+</div>
+
 </div>

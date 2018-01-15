@@ -20,9 +20,6 @@ namespace Presentation.Controllers
         // GET: Patients
         public async Task<IActionResult> Index()
         {
-            ViewData["UserName"] = HttpContext.Session.GetString("user_name");
-            ViewData["Role"] = HttpContext.Session.GetString("role");
-            ViewData["Email"] = HttpContext.Session.GetString("email");
             return View(await _context.Patients.ToListAsync());
         }
 

@@ -37,6 +37,7 @@ namespace Presentation
                     // Set a short timeout for easy testing.
                     options.IdleTimeout = TimeSpan.FromSeconds(100);
                     options.Cookie.HttpOnly = true;
+                    options.IOTimeout=TimeSpan.FromMinutes(30);
                 });
             services.AddSwaggerGen(c =>
                 {
@@ -72,7 +73,7 @@ namespace Presentation
                 {
                     routes.MapRoute(
                         name: "default",
-                        template: "{controller=Home}/{action=Index}/{id?}");
+                        template: "{controller=Persons}/{action=Login}/{id?}");
                 });
             }
     }

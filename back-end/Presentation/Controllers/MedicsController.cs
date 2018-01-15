@@ -23,14 +23,8 @@ namespace Presentation.Controllers
         // GET: Medics
         public async Task<IActionResult> Index()
         {
-            if (HttpContext.Session.GetString("user_name") != null && HttpContext.Session.GetString("user_name") != "")
-            {
-                return View(await _context.Medics.ToListAsync());
-            }
-            else
-            {
-                return RedirectToAction("Login", "Persons");
-            }
+            return View(await _context.Medics.ToListAsync());
+
         }
 
         // GET: Medics/Details/5

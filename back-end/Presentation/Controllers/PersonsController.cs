@@ -40,13 +40,13 @@ namespace Presentation.Controllers
             return View(person);
         }
 
-        // GET: People/Create
+        // GET: People/Register
         public IActionResult Register()
         {
             return View();
         }
 
-        // POST: People/Create
+        // POST: People/Register
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel registerVm)
@@ -96,6 +96,26 @@ namespace Presentation.Controllers
             return RedirectToAction("Login", "Persons");
 
         }
+        // GET: Medics/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Medics/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Cnp,FirstName,EmailAddress,LastName,Username,Password,Gender,Birthday,Role")] Person person)
+        {
+            if (ModelState.IsValid)
+            {
+                person.Id = Guid.NewGuid();
+                _context.Add(person);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(person);
+        }
 
         // GET: People/Create
         public IActionResult Login()
@@ -123,16 +143,17 @@ namespace Presentation.Controllers
             }
 
             HttpContext.Session.SetString("user_name", loginVm.UserName);
-            HttpContext.Session.SetString("role", isOk.Role);
+            HttpContext.Session.SetString("id", isOk.Id.ToString());
             HttpContext.Session.SetString("email", isOk.EmailAddress);
+            ViewBag.Username = HttpContext.Session.GetString("user_name");
+            ViewBag.Id = HttpContext.Session.GetString("id");
+            ViewBag.EmailAddress = HttpContext.Session.GetString("email");
             return RedirectToAction("Index", isOk.Role == "Patient" ? "Patients" : "Medics");
         }
 
         public IActionResult Logout()
         {
-            HttpContext.Session.SetString("user_name", "");
-            HttpContext.Session.SetString("rol", "");
-            HttpContext.Session.SetString("email", "");
+            HttpContext.Session.Clear();
             return RedirectToAction("Login", "Persons");
         }
 
