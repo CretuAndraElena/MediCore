@@ -23,7 +23,6 @@ namespace Repositories
         {
             return _databaseService.Set<T>().FirstOrDefault(t => t.Id == id);
         }
-
         public void Add(T t)
         {
             _databaseService.Set<T>().Add(t);

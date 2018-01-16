@@ -23,6 +23,10 @@ namespace Presentation.Controllers
         // GET: Medics
         public async Task<IActionResult> Index()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
+            ViewData["Username"] = HttpContext.Session.GetString("user_name");
+            ViewData["Id"] = HttpContext.Session.GetString("id");
             return View(await _context.Medics.ToListAsync());
 
         }
@@ -30,20 +34,24 @@ namespace Presentation.Controllers
         // GET: Medics/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             if (!_context.Medics.Any(t => t.Id == id))
             {
                 return NotFound();
             }
 
-            var medic = await _context.Medics
-                .SingleOrDefaultAsync(m => m.Id == id);
+            var person = await _context.Persons
+                .SingleOrDefaultAsync(m => m.Id == id && m.Role=="Medic");
 
-            return View(medic);
+            return View(person);
         }
 
         // GET: Medics/Create
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             return View();
         }
 
@@ -55,6 +63,8 @@ namespace Presentation.Controllers
             if (ModelState.IsValid)
             {
                 medic.Id = Guid.NewGuid();
+                medic.Password = CryptingUtils.Encode(medic.Password);
+                medic.Role = "Medic";
                 _context.Add(medic);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -65,6 +75,8 @@ namespace Presentation.Controllers
         // GET: Medics/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons"); 
             if (!_context.Medics.Any(t => t.Id == id))
             {
                 return NotFound();
@@ -120,6 +132,8 @@ namespace Presentation.Controllers
 
         public IActionResult SendEmail()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             return View();
         }
 
@@ -128,6 +142,7 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendEmail(EmailSenderViewModel emailSenderVm)
         {
+
             if (!ModelState.IsValid) return View(emailSenderVm);
             var isOk = await _context.Persons
                 .SingleOrDefaultAsync(m => m.Username == emailSenderVm.ToUsername);
@@ -138,6 +153,10 @@ namespace Presentation.Controllers
 
             email.Send();
             return RedirectToAction("Index", "Persons");
+        }
+        public async Task<IActionResult> ListPatients()
+        {
+            return View(await _context.Persons.ToListAsync());
         }
     }
 }

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DataDomain.Person>
+
+@{
+        ViewData["Title"] = "Index";
+    Layout = "_LayoutMedics";
+}
+        @foreach (var item in Model)
+        {
+     if(item.Role == "Patient")
+      {
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                  <div class="caption">
+                      <div class='col-lg-12 well well-add-card'>
+                          <h4> @Html.DisplayFor(model => item.FirstName) @Html.DisplayFor(model => item.LastName)</h4>
+                      </div>
+                      <div class='col-lg-12'>
+                          <p>@Html.DisplayNameFor(model => model.Cnp):@Html.DisplayFor(modelItem => item.Cnp)</p>
+                          <p>@Html.DisplayNameFor(model => model.EmailAddress):@Html.DisplayFor(modelItem => item.EmailAddress)</p>
+                          <p> @Html.DisplayNameFor(model => model.Username):@Html.DisplayFor(modelItem => item.Username)</p>
+                          <p>@Html.DisplayNameFor(model => model.Birthday):@Html.DisplayFor(modelItem => item.Birthday)</p>
+                          <p> @Html.DisplayNameFor(model => model.Gender):@Html.DisplayFor(modelItem => item.Gender)</p>
+                      </div>
+                      <li><a asp-area="" asp-controller="Medics" asp-action="SendEmail"><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+                  </div>
+              </div>
+          </div>
+      }
+        }
+
+

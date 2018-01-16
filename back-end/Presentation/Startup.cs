@@ -35,9 +35,8 @@ namespace Presentation
                 services.AddSession(options =>
                 {
                     // Set a short timeout for easy testing.
-                    options.IdleTimeout = TimeSpan.FromSeconds(100);
+                    options.IdleTimeout = TimeSpan.FromMinutes(30);
                     options.Cookie.HttpOnly = true;
-                    options.IOTimeout=TimeSpan.FromMinutes(30);
                 });
             services.AddSwaggerGen(c =>
                 {

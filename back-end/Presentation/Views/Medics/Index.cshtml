@@ -1,100 +1,32 @@
-﻿@model IEnumerable<DataDomain.Medic>
-
+﻿
 @{
     ViewData["Title"] = "Index";
     Layout = "_LayoutMedics";
 }
-
-<h2>Index</h2>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<p>
-    <a asp-action="SendEmail">Send Email</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Specialization)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rating)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cnp)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EmailAddress)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Username)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Gender)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Birthday)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Role)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Specialization)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Rating)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Cnp)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.EmailAddress)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Username)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Password)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Gender)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Birthday)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Role)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<br />
+<div class="panel panel-info" style="margin-left: 40px; margin-right: 40px;">
+    <div class="panel-heading"><h3>News...</h3></div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-8 center-block">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="/images/Zika-Virus-Infograph.jpg" alt=""/>
+                    <div class="caption">
+                        <p>Zika virus (ZIKV) is a member of the virus family Flaviviridae.[3] It is spread by daytime-active Aedes mosquitoes, such as A. aegypti and A. albopictus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="/images/F1.large.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="/images/medical-graphs-14-728.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>dafa  @ViewData["Username"]</p>

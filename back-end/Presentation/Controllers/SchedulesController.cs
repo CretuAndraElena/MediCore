@@ -21,12 +21,17 @@ namespace Presentation.Controllers
         // GET: Schedules
         public async Task<IActionResult> Index()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             return View(await _context.Schedules.ToListAsync());
         }
 
         // GET: Schedules/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
+
             if (!_context.Schedules.Any(t => t.Id == id))
             {
                 return NotFound();
@@ -41,6 +46,8 @@ namespace Presentation.Controllers
         // GET: Schedules/Create
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             return View();
         }
 
@@ -49,19 +56,18 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Date,Medic,Patient,Diagnosis")] Schedule schedule)
         {
-            if (ModelState.IsValid)
-            {
-                schedule.Id = Guid.NewGuid();
-                _context.Add(schedule);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(schedule);
+            if (!ModelState.IsValid) return View(schedule);
+            schedule.Id = Guid.NewGuid();
+            _context.Add(schedule);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Schedules/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             if (!_context.Schedules.Any(t => t.Id == id))
             {
                 return NotFound();

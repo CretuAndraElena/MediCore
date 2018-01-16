@@ -1,85 +1,48 @@
-﻿@model DataDomain.Medic
+﻿@model DataDomain.Person
 
 @{
     ViewData["Title"] = "Details";
     Layout = "_LayoutMedics";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Medic</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Specialization)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Specialization)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Cnp)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Cnp)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.EmailAddress)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.EmailAddress)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Username)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Username)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Gender)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Gender)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Birthday)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Birthday)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Role)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Role)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<br/>
+<div class="panel panel-info" style="margin-left: 40px; margin-right: 40px;">
+    <div class="panel-heading"><h3>Details about your account:</h3></div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.Cnp)</strong>: @Html.DisplayFor(model => model.Cnp)
+                </div>
+                <div>
+                    <strong> @Html.DisplayNameFor(model => model.FirstName)</strong>: @Html.DisplayFor(model => model.FirstName)
+                </div>
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.LastName)</strong>: @Html.DisplayFor(model => model.LastName)
+                </div>
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.EmailAddress)</strong>:@Html.DisplayFor(model => model.EmailAddress)
+                </div>
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.Username)</strong>: @Html.DisplayFor(model => model.Username)
+                </div>
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.Password)</strong>:@Html.DisplayFor(model => model.Password)
+                </div>
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.Gender)</strong>:@Html.DisplayFor(model => model.Gender)
+                </div>
+                <div>
+                    <strong> @Html.DisplayNameFor(model => model.Birthday)</strong>:@Html.DisplayFor(model => model.Birthday)
+                </div>
+                <div>
+                    <strong>@Html.DisplayNameFor(model => model.Role)</strong>: @Html.DisplayFor(model => model.Role)
+                </div>
+                <hr/>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="glyphicon glyphicon-pencil"></a> 
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

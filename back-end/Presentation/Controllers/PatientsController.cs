@@ -20,19 +20,26 @@ namespace Presentation.Controllers
         // GET: Patients
         public async Task<IActionResult> Index()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
+
+            ViewData["Username"] = HttpContext.Session.GetString("user_name");
+            ViewData["Id"] = HttpContext.Session.GetString("id");
             return View(await _context.Patients.ToListAsync());
         }
 
         // GET: Patients/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             if (!_context.Patients.Any(t => t.Id == id))
             {
                 return NotFound();
             }
 
-            var patient = await _context.Patients
-                .SingleOrDefaultAsync(m => m.Id == id);
+            var patient = await _context.Persons
+                .SingleOrDefaultAsync(m => m.Id == id && m.Role=="Patient");
 
             return View(patient);
         }
@@ -40,6 +47,8 @@ namespace Presentation.Controllers
         // GET: Patients/Create
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             return View();
         }
 
@@ -61,6 +70,8 @@ namespace Presentation.Controllers
         // GET: Patients/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
             if (!_context.Patients.Any(t => t.Id == id))
             {
                 return NotFound();
@@ -110,6 +121,5 @@ namespace Presentation.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
     }
 }

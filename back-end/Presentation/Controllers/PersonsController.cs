@@ -24,12 +24,20 @@ namespace Presentation.Controllers
         // GET: People
         public async Task<IActionResult> Index()
         {
+
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
+            TempData["Username"] = HttpContext.Session.GetString("user_name");
+            TempData["Id"] = HttpContext.Session.GetString("id");
             return View(await _context.Persons.ToListAsync());
         }
 
         // GET: People/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "" )
+                return RedirectToAction("Login", "Persons");
+
             if (!_context.Persons.Any(t => t.Id == id))
             {
                 return NotFound();
@@ -43,6 +51,8 @@ namespace Presentation.Controllers
         // GET: People/Register
         public IActionResult Register()
         {
+            HttpContext.Session.SetString("user_name", "");
+            HttpContext.Session.SetString("id", "");
             return View();
         }
 
@@ -51,9 +61,11 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel registerVm)
         {
+            HttpContext.Session.SetString("user_name", "");
+            HttpContext.Session.SetString("id", "");
             if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("Error", "Complete all fields.");
+                ModelState.AddModelError("Error", "Complet all fields.");
                 return View(registerVm);
             }
             var exist = await _context.Persons
@@ -64,7 +76,7 @@ namespace Presentation.Controllers
                 return View(registerVm);
             }
             exist = await _context.Persons
-               .SingleOrDefaultAsync(m => m.Username == registerVm.UserName);
+                .SingleOrDefaultAsync(m => m.Username == registerVm.UserName);
             if (exist != null)
             {
                 ModelState.AddModelError("Error", "Username is used.");
@@ -77,7 +89,6 @@ namespace Presentation.Controllers
                 ModelState.AddModelError("Error", "Cnp is used.");
                 return View(registerVm);
             }
-
             var user = new Person
             {
                 Id = new Guid(),
@@ -93,6 +104,12 @@ namespace Presentation.Controllers
             };
             _context.Add(user);
             await _context.SaveChangesAsync();
+
+            MailUtils email;
+            email = new MailUtils(user.EmailAddress, "Account Confirmation.",
+                "Your account has been successfully created. You can login.\nA beautiful day!\nMedicore team.");
+
+            email.Send();
             return RedirectToAction("Login", "Persons");
 
         }
@@ -107,19 +124,21 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Cnp,FirstName,EmailAddress,LastName,Username,Password,Gender,Birthday,Role")] Person person)
         {
-            if (ModelState.IsValid)
-            {
-                person.Id = Guid.NewGuid();
-                _context.Add(person);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(person);
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
+
+            if (!ModelState.IsValid) return View(person);
+            person.Id = Guid.NewGuid();
+            _context.Add(person);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", person.Role == "Patient" ? "Patients" : "Medics");
         }
 
         // GET: People/Create
         public IActionResult Login()
         {
+            HttpContext.Session.SetString("user_name", "");
+            HttpContext.Session.SetString("id", "");
             return View();
         }
 
@@ -142,18 +161,15 @@ namespace Presentation.Controllers
                 return View();
             }
 
-            HttpContext.Session.SetString("user_name", loginVm.UserName);
+            HttpContext.Session.SetString("user_name", isOk.Username);
             HttpContext.Session.SetString("id", isOk.Id.ToString());
-            HttpContext.Session.SetString("email", isOk.EmailAddress);
-            ViewBag.Username = HttpContext.Session.GetString("user_name");
-            ViewBag.Id = HttpContext.Session.GetString("id");
-            ViewBag.EmailAddress = HttpContext.Session.GetString("email");
             return RedirectToAction("Index", isOk.Role == "Patient" ? "Patients" : "Medics");
         }
 
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear();
+            HttpContext.Session.SetString("user_name", "");
+            HttpContext.Session.SetString("id","");
             return RedirectToAction("Login", "Persons");
         }
 
@@ -161,6 +177,9 @@ namespace Presentation.Controllers
         // GET: People/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
+            if (HttpContext.Session.GetString("user_name") == "")
+                return RedirectToAction("Login", "Persons");
+
             if (!_context.Persons.Any(t => t.Id == id))
             {
                 return NotFound();
@@ -175,18 +194,18 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Cnp,FirstName,LastName,EmailAddres,Username,Password,Gender,Birthday,Role")] Person person)
         {
+            if (HttpContext.Session.GetString("user_name") == "" )
+                return RedirectToAction("Login", "Persons");
+
             if (!_context.Persons.Any(t => t.Id == id))
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                _context.Update(person);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(person);
+            if (!ModelState.IsValid) return View(person);
+            _context.Update(person);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", person.Role == "Patient" ? "Patients" : "Medics");
         }
 
         // GET: People/Delete/5
